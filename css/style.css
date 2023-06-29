@@ -59,8 +59,51 @@
 
 .background{
     background: rgba(0, 0, 0, 0.7) url('../img/BG3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    animation: change 30s infinite ease-in-out;
+}
+
+.imges{
+    background-color: #2d2c2c;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(../img/BG3.jpeg)
+
+    }
+    20%
+    {
+        background-image: url(../img/BG3.jpeg);
+
+
+    }
+    40%
+    {
+        background-image: url(../img/GJ.jpg);
+
+
+    }
+    60%
+    {
+        background-image: url(../img/BG2.webp);
+
+
+    }
+    80%
+    {
+        background-image: url(../img/I.jpg);
+
+    }
+    100%
+    {
+        background-image: url(../img/N.jpg);
+
+    }
 }
 
 .box-main{
@@ -187,6 +230,38 @@
     color: black;
     border: black;
     align-items: center;
+}
+
+
+
+h3{
+    position: relative;
+    margin-left: 10px;
+    font-size: 0.7cm;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.70cm;
+    outline: none;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        box-shadow: 0 0 10px #03bfc4,
+                    0 0 10px #03bfc4,
+                    0 0 10px #03bfc4,
+                    0 0 10px #03bfc4,
+                    0 0 10px #03bfc4;
+            
+    }
 }
 
 
